@@ -1,6 +1,0 @@
-name: ChatGameCore
-version: '1.0.0'
-main: bet.astral.chatGameCore.ChatGameCore
-api-version: '1.21'
-authors: [ Antritus ]
-website: astral.bet

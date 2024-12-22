@@ -25,6 +25,25 @@ import java.util.stream.Collectors;
 
 @Getter
 public abstract class MathChatGame extends ChatGame {
+    public static void runTest(){
+        Random random = new Random();
+        Variable variable = new Variable(random, "J", -80.25);
+        Parentheses parentheses = new Parentheses(
+                random,
+                variable,
+                MathEquationType.POWER,
+                new Parentheses(
+                        random,
+                        variable,
+                        MathEquationType.MINUS,
+                        variable
+                )
+        );
+
+        System.out.println(parentheses.displayFirst());
+        System.out.println(parentheses.calculate());
+    }
+
     public static final Set<String> CANNOT_CALCULATE = Set.of("Cannot calculate", "No possible answer", "No answer", "NaN", "Not a Number", "nan");
     public static final Set<String> INFINITE = Set.of("Infinity", "Infinite");
     public static final Set<String> NEGATIVE_INFINITE = Set.of("-Infinity", "-Infinite");

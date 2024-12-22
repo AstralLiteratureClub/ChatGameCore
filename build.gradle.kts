@@ -1,6 +1,9 @@
 plugins {
     kotlin("jvm") version "2.1.0"
+    id("maven-publish")
     id("com.github.johnrengelman.shadow") version "8.1.1"
+
+    id("io.freefair.lombok") version "8.11"
 }
 
 group = "bet.astral"
@@ -19,9 +22,9 @@ repositories {
 
 dependencies {
     implementation("bet.astral:more4j:1.0.2")
-    implementation("bet.astral:messenger:2.3.0")
+    implementation("bet.astral:messenger:2.3.2")
 
-    implementation("io.papermc.paper:paper-api:1.21.3-R0.1-SNAPSHOT")
+    compileOnly("io.papermc.paper:paper-api:1.21.3-R0.1-SNAPSHOT")
 
     implementation("org.projectlombok:lombok:1.18.30")
     annotationProcessor("org.projectlombok:lombok:1.18.30")
@@ -46,3 +49,14 @@ tasks.processResources {
         expand(props)
     }
 }
+
+
+
+publishing {
+    publications {
+        create<MavenPublication>("maven") {
+            from(components["java"])
+        }
+    }
+}
+

@@ -1,1 +1,1 @@
-rootProject.name = "ChatGameCore"
+rootProject.name = "chatgamecore"

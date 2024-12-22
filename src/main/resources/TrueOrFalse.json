@@ -1,0 +1,42 @@
+[
+  {
+    "statement": "chat-game.true-or-false.statement.1",
+    "true": true
+  },
+  {
+    "statement": "chat-game.true-or-false.statement.2",
+    "true": false
+  },
+  {
+    "statement": "chat-game.true-or-false.statement.3",
+    "true": false
+  },
+  {
+    "statement": "chat-game.true-or-false.statement.4",
+    "true": true
+  },
+  {
+    "statement": "chat-game.true-or-false.statement.5",
+    "true": true
+  },
+  {
+    "statement": "chat-game.true-or-false.statement.6",
+    "true": true
+  },
+  {
+    "statement": "chat-game.true-or-false.statement.7",
+    "true": true
+  },
+  {
+    "statement": "chat-game.true-or-false.statement.8",
+    "true": true
+  },
+  {
+    "statement": "chat-game.true-or-false.statement.9",
+    "true": true
+  },
+  {
+    "statement": "chat-game.true-or-false.statement.10",
+    "true": true
+  }
+]
