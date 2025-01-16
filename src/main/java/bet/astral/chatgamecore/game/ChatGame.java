@@ -49,8 +49,8 @@ public abstract class ChatGame {
         );
     }
     public void guess(Player player, String guess){
-        if (!requireCaseMatch && correctAnswers.stream().anyMatch(s->s.toLowerCase().startsWith(guess))
-                || correctAnswers.stream().anyMatch(s->s.startsWith(guess))
+        if (!requireCaseMatch && correctAnswers.stream().anyMatch(s->guess.toLowerCase().startsWith(s))
+                || correctAnswers.stream().anyMatch(guess::startsWith)
         ){
             winner = player;
             state = State.ENDED_PLAYER_GUESSED;

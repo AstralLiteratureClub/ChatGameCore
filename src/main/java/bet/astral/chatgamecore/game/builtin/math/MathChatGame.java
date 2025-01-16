@@ -255,6 +255,13 @@ public abstract class MathChatGame extends ChatGame {
         private final MathEquationType[] equationTypes;
         private final TextColor color;
 
+        protected Parentheses(Random random, Object[] values, MathEquationType[] equationTypes, TextColor color){
+            this.random = random;
+            this.values = values;
+            this.equationTypes = equationTypes;
+            this.color = color;
+        }
+
         public Parentheses(Random random, Object value1, MathEquationType equationType, Object value2) {
             this.random = random;
             this.color = Formatter.randomColor(random);

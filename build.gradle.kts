@@ -7,7 +7,7 @@ plugins {
 }
 
 group = "bet.astral"
-version = "1.0.0"
+version = "1.0.1"
 
 repositories {
     mavenLocal()
@@ -32,7 +32,7 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter:5.8.1")
 }
 
-val targetJavaVersion = 22
+val targetJavaVersion = 21
 kotlin {
     jvmToolchain(targetJavaVersion)
 }
